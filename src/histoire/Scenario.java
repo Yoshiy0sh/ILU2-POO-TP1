@@ -43,8 +43,17 @@ public class Scenario {
 		catch(IllegalArgumentException e){
 			System.out.println(e);
 		}
+		catch(IllegalStateException e) {
+			System.out.println(e);
+		}
 		System.out.println(village.partirVendeur(bonemine));
-		System.out.println(village.afficherMarche());
+		try {
+			System.out.println(village.afficherMarche());
+		}
+		catch(VillageSansChefException e) {
+			System.out.println(e);
+		}
+	
 	}
 
 }
