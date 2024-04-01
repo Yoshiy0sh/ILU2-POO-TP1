@@ -2,6 +2,7 @@ package villagegaulois;
 
 import personnages.Chef;
 import personnages.Gaulois;
+import exceptions.VillageSansChefException;
 
 public class Village {
 	private String nom;
